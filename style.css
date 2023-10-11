@@ -22,3 +22,51 @@ nav {
 h1 {
     color: hsl(255, 137, 3);
 }
+
+/* Style the header and navigation links */
+header {
+    background-color: #333;
+    color: rgb(255, 137, 3);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: rgb(255, 137, 3);
+    text-decoration: none;
+}
+
+/* Center the images upper*/
+.photos {
+   display: inline-flex;
+   margin: auto;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   gap: 200px;
+
+}
+
+/* Style the text section */
+.text {
+    text-align: justify;
+    padding: 20px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 200px;
+}
