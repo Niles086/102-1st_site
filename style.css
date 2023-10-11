@@ -17,8 +17,8 @@ nav {
 
 /* class to target similar items */
 .text {
-  color: red;
+  color: rgb(255, 137, 3);
 }
 h1 {
-    color: red;
+    color: hsl(255, 137, 3);
 }
