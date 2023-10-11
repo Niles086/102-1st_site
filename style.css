@@ -1,6 +1,24 @@
 /* external style sheet */
 
 body {
-background-color: crimson;
+background-color: rgb(255, 137, 3);
 }
 
+nav {
+    border: 2px solid black;
+}
+nav {
+    background-color: black;
+}
+/* ID one unique element */
+#body {
+    background-color: black;
+}
+
+/* class to target similar items */
+.text {
+  color: red;
+}
+h1 {
+    color: red;
+}
