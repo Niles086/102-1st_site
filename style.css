@@ -80,6 +80,26 @@ footer {
     margin-top: 200px;
 }
 
+.button2 {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    gap: 200px;   
+    padding: 10px 20px;
+    background-color: rgb(255, 137, 3); /* Button background color */
+    color: rgb(5, 5, 5); /* Text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 /* Style the links as buttons */
 .button {
     display: inline-block;
@@ -93,5 +113,38 @@ footer {
     font-weight: bold;
 }
 
-.button:hover {
-    background-color: #0056b3; /* Hover state background color */
+
+
+    /* Button animation */
+    .button:hover {
+        animation: wiggle 2s linear infinite;
+    }
+        
+
+
+      /* button-frames */
+      @keyframes wiggle {
+        0%, 7% {
+          transform: rotateZ(0);
+        }
+        15% {
+          transform: rotateZ(-15deg);
+        }
+        20% {
+          transform: rotateZ(10deg);
+        }
+        25% {
+          transform: rotateZ(-10deg);
+        }
+        30% {
+          transform: rotateZ(6deg);
+        }
+        35% {
+          transform: rotateZ(-4deg);
+        }
+        40%, 100% {
+          transform: rotateZ(0);
+        }
+      }
+      
+      
