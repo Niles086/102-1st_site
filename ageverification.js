@@ -1,11 +1,13 @@
-let age = prompt('You must be 21 years or older enter this site. How old are you?');
-if(age >= 21){
-    documenw.write('Welcome to Anime Addict');
-    } else {
-        function redirectToAnotherSite() 
-        window.location.href = "https://www.babiesrus.com/"
-    }
-    
+ // parseInt used to convert user input into numeric format
+ function checkAge() {
+    let userAge = parseInt(prompt("You must be 18 to ENTER. Please enter your age")); 
+ }
+// using !isNaN to checks whether a value is Not  a number
+if (!isNaN(userAge) && userAge >= 18) {
+alert("Welcome to Anime Addict");
+// load content for users above the age limit here.
 
-
-    window.location.href = "https://niles086.github.io/cf-projects/"; 
+} else {
+// If the condition is false, redirect to another site
+window.location.href = "https://www.babiesrus.com/";
+}

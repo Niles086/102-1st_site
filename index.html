@@ -4,18 +4,23 @@
     <title>Anime-Addict</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        // parseInt used to convert user input into numeric format
+        // parseInt is used to convert user input into numeric format
         function checkAge() {
-            let userAge = parseInt(prompt("You must be 18 to ENTER. Please enter your age")); 
-// using !isNaN to checks whether a value is Not  a number
-if (!isNaN(userAge) && userAge >= 18) {
-        alert("Welcome to Anime Addict");
-        // load content for users above the age limit here.
-
-    } else {
-  // If the condition is false, redirect to another site
-  window.location.href = "https://www.babiesrus.com/";
-}</script>
+          let userAge = parseInt(prompt("You must be 18 to ENTER. Please enter your age"));
+    
+          // Check if the user's age is valid and greater than or equal to 18
+          if (!isNaN(userAge) && userAge >= 18) {
+            alert("Welcome to Anime Addict");
+            // Load content for users above the age limit here.
+          } else {
+            // If the condition is false, redirect to another site
+            window.location.href = "https://www.babiesrus.com/";
+          }
+        }
+    
+        // Call the age verification function when the page loads
+        checkAge();
+      </script>
 </head>
 <body>
     <header>
@@ -61,15 +66,7 @@ if (!isNaN(userAge) && userAge >= 18) {
     
     <!-- <a class="button2" href="https://armando-bugarin.github.io/hello-world/">About US</a> -->
     </footer>
-    <script>
-     let email = prompt('Welcome to Anime Addict. Please enter your email to sign up for our mailing list?');
-     if (email){
-         document.write('Thanks for signing up.',email);
-     } else {
-         document.write('Maybe next time')
-     }
-    </script>
-    
+   
     </body>
     
 </html>
