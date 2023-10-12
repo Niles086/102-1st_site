@@ -3,7 +3,19 @@
 <head>
     <title>Anime-Addict</title>
     <link rel="stylesheet" href="style.css">
-   
+    <script>
+        // parseInt used to convert user input into numeric format
+        function checkAge() {
+            let userAge = parseInt(prompt("You must be 18 to ENTER. Please enter your age")); 
+// using !isNaN to checks whether a value is Not  a number
+if (!isNaN(userAge) && userAge >= 18) {
+        alert("Welcome to Anime Addict");
+        // load content for users above the age limit here.
+
+    } else {
+  // If the condition is false, redirect to another site
+  window.location.href = "https://www.babiesrus.com/";
+}</script>
 </head>
 <body>
     <header>
@@ -22,12 +34,12 @@
             </ul>
         </nav>
     </header>
-<section class="photos">
-    <img src="https://niles086.github.io/cf-projects/dbz.jpg" alt="DragonBall">
-    <img src="https://niles086.github.io/cf-projects/bleach.jpg" alt="bleach">
-</section>
+    <section class="photos">
+        <img src="https://niles086.github.io/cf-projects/dbz.jpg" alt="DragonBall">
+        <img src="https://niles086.github.io/cf-projects/bleach.jpg" alt="bleach">
+        </section>
 
-<!-- <section class="photos-upper"> -->
+        <!-- <section class="photos-upper"> -->
 <!-- </section> -->
 
 <section>
@@ -40,7 +52,7 @@
 </section>
 
 <!-- <section class="photos"> -->
-<!-- </section> -->
+    <!-- </section> -->
 
 <footer>
     <!-- <a class="button2" href="https://armando-bugarin.github.io/hello-world/">Contact Us</a> -->
@@ -48,8 +60,16 @@
     <p class="text">Thank you for visiting our site have a great day. </p>
     
     <!-- <a class="button2" href="https://armando-bugarin.github.io/hello-world/">About US</a> -->
-</footer>
-
-</body>
-
+    </footer>
+    <script>
+     let email = prompt('Welcome to Anime Addict. Please enter your email to sign up for our mailing list?');
+     if (email){
+         document.write('Thanks for signing up.',email);
+     } else {
+         document.write('Maybe next time')
+     }
+    </script>
+    
+    </body>
+    
 </html>
