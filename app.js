@@ -48,6 +48,7 @@
 // getEmail();
 
 
+
 // function to suggest site anime
 function content() {
   let anime = prompt('What is your favorite anime?');{
@@ -55,7 +56,13 @@ function content() {
 }
 }
 
-// call cor content function
-// content();
+function howManyNinja() {
+  let numOfNinja = prompt('How many Ninja would you like?');
+  
+  for(let i = 0; i < numOfNinja; i++){
+document.write("<img src='numOfNinja.jpg' alt='My Ninja Way is strong' >")
+  }
+}
+
 
      
