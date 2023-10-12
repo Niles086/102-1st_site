@@ -3,39 +3,9 @@
 <head>
     <title>Anime-Addict</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        // parseInt is used to convert user input into numeric format
-        let userAge = parseInt(prompt("You must be 18 to ENTER. Please enter your age"));
-        function checkAge() {
-    
-          // Check if the user's age is valid and greater than or equal to 18 isNaN is used to check if a value is Not-a-Number It is a logical expression that evaluates to true if the value is a valid number and false if it is not.
-          if (!isNaN(userAge) && userAge >= 18) {
-            alert("Welcome to Anime Addict");
-            // Load content for users above the age limit here.
-          } else {
-            // If the condition is false, redirect to another site
-            window.location.href = "https://www.babiesrus.com/";
-          }
-        }
-    
-        // Call the age verification function when the page loads
-        checkAge();
-      </script>
+<script src="app.js"></script>
 </head>
 <body>
-    <script>
-        let email = prompt('Welcome to Anime Addict. Please enter your email to sign up for our mailing list?');
-        if (email){
-            document.write('Thanks for signing up.',email);
-        } else {
-            document.write('Maybe next time')
-        }
-       </script>
-       <script>
-        let anime = prompt('What is your favorite anime?');{
-            document.write('We have some great content about' + anime)
-        }
-       </script>
     <header>
         <nav>
             <h1 class="bubble">Anime-Addict</h1>
@@ -52,6 +22,9 @@
             </ul>
         </nav>
     </header>
+    <script>
+        getEmail()
+    </script>
     <section class="photos">
         <img src="https://niles086.github.io/cf-projects/dbz.jpg" alt="DragonBall">
         <img src="https://niles086.github.io/cf-projects/bleach.jpg" alt="bleach">
@@ -59,6 +32,9 @@
 
         <!-- <section class="photos-upper"> -->
 <!-- </section> -->
+<script>
+    content()
+</script>
 
 <section>
     <p class="text" id="body">Anime is truly great for a multitude of reasons. It's a unique and captivating art form that transcends cultural boundaries, offering a diverse range of genres and stories to cater to almost anyone's taste. Whether you're into action-packed adventures, thought-provoking mysteries, heartfelt romances, or fantastical worlds beyond imagination, there's an anime for you. What sets anime apart is its ability to explore complex themes, delve deep into character development, and push the boundaries of creativity, all while using stunning visuals and a mesmerizing soundtrack to enhance the storytelling. It also fosters a global community of fans who come together to celebrate their shared passion, forming friendships and sparking discussions that extend far beyond the screen. Anime has an uncanny ability to evoke a wide range of emotions, making it a medium that can both entertain and inspire, leaving a lasting impact on those who venture into its colorful and captivating realms. </p>
