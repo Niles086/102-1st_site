@@ -67,15 +67,17 @@ function content() {
 function howManyNinja() {
   let numOfNinja = prompt('How many Ninja would you like?');
   
+  let counter = 0;
+
   for (let i = 0; i < numOfNinja; i++) {
+    
+  counter++;
 
   document.write("<img class='loop-img' src='ninja.jpg' alt='My Ninja Way is strong'>");
 
-    // counter++;
   }
 
-  // // Update the loop counter after the loop
-  // loopCount.textContent = `counter: ${counter}`;
+  document.write('You now have ' + counter + ' ninja');
 }
 
 
