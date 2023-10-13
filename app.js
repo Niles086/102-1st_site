@@ -51,17 +51,31 @@
 
 // function to suggest site anime
 function content() {
-  let anime = prompt('What is your favorite anime?');{
-    document.write('We have some great content about' + anime)
+  let anime = prompt('What is your favorite anime?');
+  
+  while (anime === '') {
+    anime = prompt('Please enter your favorite anime.');
+  }
+
+  document.write('We have some great content about ' + anime);
 }
-}
+
+
+// let loopCount = document.getElementById("counter");
+// let counter = 0;
 
 function howManyNinja() {
   let numOfNinja = prompt('How many Ninja would you like?');
   
-  for(let i = 0; i < numOfNinja; i++){
-document.write("<img src='numOfNinja.jpg' alt='My Ninja Way is strong' >")
+  for (let i = 0; i < numOfNinja; i++) {
+
+  document.write("<img class='loop-img' src='ninja.jpg' alt='My Ninja Way is strong'>");
+
+    // counter++;
   }
+
+  // // Update the loop counter after the loop
+  // loopCount.textContent = `counter: ${counter}`;
 }
 
 
